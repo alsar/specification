@@ -9,8 +9,7 @@ class NotSpecification extends CompositeSpecification
     protected $specification;
 
     /**
-     * @param Specification $one
-     * @param Specification $other
+     * @param Specification $specification
      */
     public function __construct(Specification $specification)
     {
