@@ -12,6 +12,4 @@ EOT
     );
 }
 
-$loader->add('Alsar', __DIR__);
-
-var_dump(__DIR__);
+$loader->addPsr4('Alsar\\Specification\\', __DIR__);

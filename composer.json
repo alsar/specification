@@ -10,11 +10,15 @@
 		"phake/phake" : "~2.0@alpha"
 	},
 	"autoload" : {
-		"psr-0" : {
-			"Alsar" : "src"
+		"psr-4" : {
+			"Alsar\\Specification\\" : "src/"
 		}
 	},
 	"config" : {
 		"bin-dir" : "bin"
-	}
+	},
+	"keywords" : [
+		"specification pattern",
+		"specification"
+	]
 }
