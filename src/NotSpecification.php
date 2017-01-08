@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace Alsar\Specification;
 
 class NotSpecification extends CompositeSpecification

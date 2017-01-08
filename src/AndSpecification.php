@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace Alsar\Specification;
 
 class AndSpecification extends CompositeSpecification
@@ -19,7 +22,7 @@ class AndSpecification extends CompositeSpecification
      */
     public function __construct(Specification $x, Specification $y)
     {
-        $this->one   = $x;
+        $this->one = $x;
         $this->other = $y;
     }
 

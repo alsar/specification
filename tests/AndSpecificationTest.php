@@ -1,8 +1,8 @@
 <?php
+
 namespace Alsar\Specification;
 
-use Alsar\Specification\Specification;
-use \PHPUnit_Framework_TestCase as TestCase;
+use PHPUnit_Framework_TestCase as TestCase;
 
 class AndSpecificationTest extends TestCase
 {

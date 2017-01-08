@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace Alsar\Specification;
 
 abstract class CompositeSpecification implements Specification
