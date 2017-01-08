@@ -6,7 +6,7 @@ abstract class CompositeSpecification implements Specification
     /**
      * {@inheritdoc}
      */
-    public function andx(Specification $other)
+    public function andx(Specification $other): Specification
     {
         return new AndSpecification($this, $other);
     }
@@ -14,7 +14,7 @@ abstract class CompositeSpecification implements Specification
     /**
      * {@inheritdoc}
      */
-    public function orx(Specification $other)
+    public function orx(Specification $other): Specification
     {
         return new OrSpecification($this, $other);
     }
@@ -22,7 +22,7 @@ abstract class CompositeSpecification implements Specification
     /**
      * {@inheritdoc}
      */
-    public function not()
+    public function not(): Specification
     {
         return new NotSpecification($this);
     }

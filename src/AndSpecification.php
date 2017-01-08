@@ -26,7 +26,7 @@ class AndSpecification extends CompositeSpecification
     /**
      * {@inheritdoc}
      */
-    public function isSatisfiedBy($candidate)
+    public function isSatisfiedBy($candidate): bool
     {
         return $this->one->isSatisfiedBy($candidate) && $this->other->isSatisfiedBy($candidate);
     }

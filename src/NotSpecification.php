@@ -19,7 +19,7 @@ class NotSpecification extends CompositeSpecification
     /**
      * {@inheritdoc}
      */
-    public function isSatisfiedBy($candidate)
+    public function isSatisfiedBy($candidate): bool
     {
         return !$this->specification->isSatisfiedBy($candidate);
     }

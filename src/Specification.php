@@ -6,26 +6,26 @@ interface Specification
     /**
      * @param object $candidate
      *
-     * @return boolean
+     * @return bool
      */
-    public function isSatisfiedBy($candidate);
+    public function isSatisfiedBy($candidate): bool;
 
     /**
      * @param Specification $other
      *
      * @return Specification
      */
-    public function andx(Specification $other);
+    public function andx(Specification $other): Specification;
 
     /**
      * @param Specification $other
      *
      * @return Specification
      */
-    public function orx(Specification $other);
+    public function orx(Specification $other): Specification;
 
     /**
      * @return Specification
      */
-    public function not();
+    public function not(): Specification;
 }
