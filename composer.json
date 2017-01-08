@@ -6,12 +6,16 @@
 		"php" : ">=5.5"
 	},
 	"require-dev" : {
-		"phpunit/phpunit" : "~3.7",
-		"phake/phake" : "~2.0@alpha"
+		"phpunit/phpunit": "^5.7"
 	},
 	"autoload" : {
 		"psr-4" : {
 			"Alsar\\Specification\\" : "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Alsar\\Specification\\": "tests/"
 		}
 	},
 	"config" : {
