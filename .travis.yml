@@ -1,0 +1,16 @@
+language: php
+
+php:
+  - 7.0
+  - 7.1
+  - nightly
+  - hhvm
+
+before_install:
+  - composer self-update
+
+install:
+  - composer update --no-interaction
+
+script:
+  - composer test

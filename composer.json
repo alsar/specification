@@ -25,5 +25,9 @@
 	"keywords" : [
 		"specification pattern",
 		"specification"
-	]
+	],
+	"scripts": {
+		"test": "bin/phpunit",
+		"fix-cs": "bin/php-cs-fixer fix"
+	}
 }
