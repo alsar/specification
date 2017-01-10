@@ -18,14 +18,14 @@ interface Specification
      *
      * @return Specification
      */
-    public function andx(Specification $other): Specification;
+    public function and(Specification $other): Specification;
 
     /**
      * @param Specification $other
      *
      * @return Specification
      */
-    public function orx(Specification $other): Specification;
+    public function or(Specification $other): Specification;
 
     /**
      * @return Specification
