@@ -1,5 +1,6 @@
 {
 	"name" : "alsar/specification",
+        "description": "Specification pattern implemented in PHP.",
 	"type" : "library",
 	"license" : "MIT",
 	"require" : {
