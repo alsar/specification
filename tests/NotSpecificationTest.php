@@ -2,7 +2,7 @@
 
 namespace Alsar\Specification;
 
-use PHPUnit_Framework_TestCase as TestCase;
+use PHPUnit\Framework\TestCase;
 
 class NotSpecificationTest extends TestCase
 {
@@ -18,7 +18,7 @@ class NotSpecificationTest extends TestCase
 
         $notSpecification = new NotSpecification($stub);
 
-        $this->assertTrue($notSpecification->isSatisfiedBy('abc'));
+        $this->assertTrue($notSpecification->isSatisfiedBy(new class(){}));
     }
 
     /**
@@ -33,6 +33,6 @@ class NotSpecificationTest extends TestCase
 
         $notSpecification = new NotSpecification($stub);
 
-        $this->assertFalse($notSpecification->isSatisfiedBy('abc'));
+        $this->assertFalse($notSpecification->isSatisfiedBy(new class(){}));
     }
 }

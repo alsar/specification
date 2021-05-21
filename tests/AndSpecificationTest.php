@@ -2,7 +2,7 @@
 
 namespace Alsar\Specification;
 
-use PHPUnit_Framework_TestCase as TestCase;
+use PHPUnit\Framework\TestCase;
 
 class AndSpecificationTest extends TestCase
 {
@@ -23,7 +23,7 @@ class AndSpecificationTest extends TestCase
 
         $andSpecification = new AndSpecification($stub1, $stub2);
 
-        $this->assertTrue($andSpecification->isSatisfiedBy('abc'));
+        $this->assertTrue($andSpecification->isSatisfiedBy(new class(){}));
     }
 
     /**
@@ -43,7 +43,7 @@ class AndSpecificationTest extends TestCase
 
         $andSpecification = new AndSpecification($stub1, $stub2);
 
-        $this->assertFalse($andSpecification->isSatisfiedBy('abc'));
+        $this->assertFalse($andSpecification->isSatisfiedBy(new class(){}));
     }
 
     /**
@@ -63,7 +63,7 @@ class AndSpecificationTest extends TestCase
 
         $andSpecification = new AndSpecification($stub1, $stub2);
 
-        $this->assertFalse($andSpecification->isSatisfiedBy('abc'));
+        $this->assertFalse($andSpecification->isSatisfiedBy(new class(){}));
     }
 
     /**
@@ -83,6 +83,6 @@ class AndSpecificationTest extends TestCase
 
         $andSpecification = new AndSpecification($stub1, $stub2);
 
-        $this->assertFalse($andSpecification->isSatisfiedBy('abc'));
+        $this->assertFalse($andSpecification->isSatisfiedBy(new class(){}));
     }
 }

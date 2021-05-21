@@ -6,30 +6,16 @@ namespace Alsar\Specification;
 
 class AndSpecification extends CompositeSpecification
 {
-    /**
-     * @var Specification
-     */
-    protected $one;
+    protected Specification $one;
+    protected Specification $other;
 
-    /**
-     * @var Specification
-     */
-    protected $other;
-
-    /**
-     * @param Specification $x
-     * @param Specification $y
-     */
     public function __construct(Specification $x, Specification $y)
     {
         $this->one = $x;
         $this->other = $y;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function isSatisfiedBy($candidate): bool
+    public function isSatisfiedBy(object $candidate): bool
     {
         return $this->one->isSatisfiedBy($candidate) && $this->other->isSatisfiedBy($candidate);
     }
